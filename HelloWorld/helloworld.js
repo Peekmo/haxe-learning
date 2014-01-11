@@ -136,4 +136,57 @@ Haxe Compiler 3.0.1 - (C)2005-2013 Haxe Foundation
   --macro  : call the given macro before typing anything else
   --wait <[host:]port> : wait on the given port for commands to run)
   --connect <[host:]port> : connect on the given port and run commands there)
-  --
+  --cwd <dir> : set current working directory
+  -version : print version and exit
+  --help-defines : print help for all compiler specific defines
+  --help-metas : print help for all compiler metadatas
+  -help  Display this list of options
+  --help  Display this list of options
+
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ cp [K[K[Kv HelloWorld/* .
+v: command not found
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ v HelloWorld/* .[1@m
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ nek [Ko helloworld.
+Uncaught exception - load.c(181) : Module not found : helloworld.
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ neko helloworld.n
+HelloWorld.hx:5: Hello World
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ nekotools build.hxml [K[K[K[K[K[K[K[K[K[K[Kboot helloworld.n 
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ /§[K:[Khome/[K[K[K[K[Khell[K[K[K[K[Kls
+build.hxml  [0m[01;34mHelloWorld[0m     helloworld.js  test.html
+[01;32mhelloworld[0m  HelloWorld.hx  helloworld.n
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ ./helloworld 
+HelloWorld.hx:5: Hello World
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ rm helloworld
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ mv helloworld.* HelloWorld
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ rm HelloWorld.hx 
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ mv test.html HelloWorld/
+peekmo@Peekmo ~/Haxe [0;36m[0;31m[0m$ git init
+Initialized empty Git repository in /home/peekmo/Haxe/.git/
+peekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ git remote add origin git@github.com:Peekmo/haxe-learni ng.git
+peekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:Peekmo/haxe-learning.git'
+peekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ git push origin masterremote add origin git@github.com:Peekmo/haxe-learninng.git[Apeekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ [C[C[C[C[33Ppush origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@u
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:Peekmo/haxe-learning.git'
+peekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ mv[K[Kcp build.hxml HelloWorld/
+peekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ git add -A
+peekmo@Peekmo ~/Haxe [0;36m[0;31m*[0m$ git commit -m "Hello World"
+[master (root-commit) c2864b9] Hello World
+ 6 files changed, 167 insertions(+)
+ create mode 100644 HelloWorld/HelloWorld.hx
+ create mode 100644 HelloWorld/build.hxml
+ create mode 100644 HelloWorld/helloworld.js
+ create mode 100644 HelloWorld/helloworld.n
+ create mode 100644 HelloWorld/test.html
+ create mode 100644 build.hxml
+peekmo@Peekmo ~/Haxe [0;36m(master)[0;31m[0m$ git push origin master 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 7.96 KiB, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To git@github.com:Peekmo/haxe-learning.git
+ * [new branch]      master -> master
+peekmo@Peekmo ~/Haxe [0;36m(master)[0;31m[0m$ git push origin master commit -m "Hello World"add -A[Kcp build.hxml HelloWorld/git push -u origin master[3P[C[C[C[C[C[C[C[C[C[C[C[C[Cremote add origin git@github.com:P
