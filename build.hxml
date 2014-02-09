@@ -1,4 +1,4 @@
 # [No Main] (js:No output)
--main LocalFunction
--neko LocalFunction.n
--cp LocalFunction
+-main ChuckNorris
+-js ChuckNorris.js
+#-cp CodinGame/
