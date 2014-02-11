@@ -1,0 +1,6 @@
+[submodule "Node/lib/nodejs_externs"]
+	path = Node/lib/nodejs_externs
+	url = git@github.com:clemos/nodejs_externs.git
+[submodule "Node/lib/node-api"]
+	path = Node/lib/node-api
+	url = git@github.com:clemos/node-api.git

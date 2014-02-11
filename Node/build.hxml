@@ -1,0 +1,5 @@
+-cp src/server
+-cp lib/nodejs_externs
+-cp lib/node-api
+-main Server
+-js js/server/server.js
