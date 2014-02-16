@@ -1,0 +1,4 @@
+-main Main
+-cpp build
+-cp src
+-D HXCPP_M64
