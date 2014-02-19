@@ -1,0 +1,980 @@
+@classes = $new(null);
+@enum_to_string = function()
+    return neko.Boot.__enum_str(this)
+@serialize = function()
+    return neko.Boot.__serialize(this)
+@tag_serialize = function()
+    return neko.Boot.__tagserialize(this)
+@lazy_error = function(e)
+    return $varargs(function(_)
+        return $throw(e)
+    )
+@default__string = function()
+    return {
+        var @s = this.toString();
+        if $typeof(@s) != $tobject
+            return null;
+        return @s.__s;
+    }
+
+@closure0 = function(@this,@fun)
+    return if @fun == null
+        null
+    else
+        function() {
+            this = @this;
+            @fun();
+        }
+
+
+@closure1 = function(@this,@fun)
+    return if @fun == null
+        null
+    else
+        function(a) {
+            this = @this;
+            @fun(a);
+        }
+
+
+@closure2 = function(@this,@fun)
+    return if @fun == null
+        null
+    else
+        function(a,b) {
+            this = @this;
+            @fun(a,b);
+        }
+
+
+@closure3 = function(@this,@fun)
+    return if @fun == null
+        null
+    else
+        function(a,b,c) {
+            this = @this;
+            @fun(a,b,c);
+        }
+
+
+@closure4 = function(@this,@fun)
+    return if @fun == null
+        null
+    else
+        function(a,b,c,d) {
+            this = @this;
+            @fun(a,b,c,d);
+        }
+
+
+@closure5 = function(@this,@fun)
+    return if @fun == null
+        null
+    else
+        function(a,b,c,d,e) {
+            this = @this;
+            @fun(a,b,c,d,e);
+        }
+
+
+{
+}
+neko = $new(null);
+@classes.neko = neko;
+haxe = $new(null);
+@classes.haxe = haxe;
+haxe.io = $new(null);
+{
+    var @tmp = $new(null);
+    neko.@Lib = @tmp;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    neko.Lib = @tmp;
+    @tmp.prototype = neko.@Lib;
+    @tmp.load = function(lib,prim,nargs) {
+        return $loader.loadprim(( (lib + String.new("@")) + prim ).__s,nargs);
+    }
+    neko.@Lib.__class__ = neko.Lib;
+}
+{
+    var @tmp = $new(null);
+    @Array = @tmp;
+    @tmp.unshift = function(x) {
+        var l = this.length;
+        this.__grow(l + 1);
+        var a = this.__a;
+        $ablit(a,1,a,0,l);
+        a[0] = x;
+        return null;
+    }
+    @tmp.toString = function() {
+        var s = StringBuf.new();
+        StringBuf.__add(s.b,String.new("["));
+        var it = this.iterator();
+        {
+            var @tmp = it;
+            while @tmp.hasNext() {
+                var i = @tmp.next();
+                {
+                    StringBuf.__add(s.b,i);
+                    if ( it.hasNext() )
+                        StringBuf.__add_char(s.b,44);
+                }
+            }
+        }
+        StringBuf.__add(s.b,String.new("]"));
+        return String.new(StringBuf.__to_string(s.b));
+    }
+    @tmp.splice = function(pos,len) {
+        if ( len < 0 )
+            return Array.new();
+        if ( pos < 0 ) {
+            pos = (this.length + pos);
+            if ( pos < 0 )
+                pos = 0;
+        }
+        if ( pos > this.length ) {
+            pos = 0;
+            len = 0;
+        }
+        else
+            if ( (pos + len) > this.length ) {
+                len = (this.length - pos);
+                if ( len < 0 )
+                    len = 0;
+            }
+
+        var a = this.__a;
+        var ret = Array.new1($asub(a,pos,len),len);
+        var end = pos + len;
+        $ablit(a,pos,a,end,this.length - end);
+        this.length -= len;
+        while ( (len -= 1) >= 0 )
+            a[this.length + len] = null
+        return ret;
+    }
+    @tmp.sort = function(f) {
+        var a = this.__a;
+        var i = 0;
+        var l = this.length;
+        while ( i < l ) {
+            var swap = false;
+            var j = 0;
+            var max = (l - i) - 1;
+            while ( j < max ) {
+                if ( f(a[j],a[j + 1]) > 0 ) {
+                    var tmp = a[j + 1];
+                    a[j + 1] = a[j];
+                    a[j] = tmp;
+                    swap = true;
+                }
+                j += 1;
+            }
+            if ( $not(swap) )
+                break;;
+            i += 1;
+        }
+        return null;
+    }
+    @tmp.slice = function(pos,end) {
+        if ( pos < 0 ) {
+            pos = (this.length + pos);
+            if ( pos < 0 )
+                pos = 0;
+        }
+        if ( end == null )
+            end = this.length
+        else
+            if ( end < 0 )
+                end = (this.length + end);
+
+        if ( end > this.length )
+            end = this.length;
+        var len = end - pos;
+        if ( len < 0 )
+            return Array.new();
+        return Array.new1($asub(this.__a,pos,len),len);
+    }
+    @tmp.shift = function() {
+        var l = this.length;
+        if ( l == 0 )
+            return null;
+        var a = this.__a;
+        var x = a[0];
+        l -= 1;
+        $ablit(a,0,a,1,l);
+        a[l] = null;
+        this.length = l;
+        return x;
+    }
+    @tmp.reverse = function() {
+        var i = 0;
+        var l = this.length;
+        var a = this.__a;
+        var half = l >> 1;
+        l -= 1;
+        while ( i < half ) {
+            var tmp = a[i];
+            a[i] = a[l - i];
+            a[l - i] = tmp;
+            i += 1;
+        }
+        return null;
+    }
+    @tmp.remove = function(x) {
+        var i = 0;
+        var l = this.length;
+        var a = this.__a;
+        while ( i < l ) {
+            if ( a[i] == x ) {
+                $ablit(a,i,a,i + 1,(l - i) - 1);
+                l -= 1;
+                this.length = l;
+                a[l] = null;
+                return true;
+            }
+            i += 1;
+        }
+        return false;
+    }
+    @tmp.push = function(x) {
+        var l = this.length;
+        this.__grow(l + 1);
+        this.__a[l] = x;
+        return l + 1;
+    }
+    @tmp.pop = function() {
+        if ( this.length == 0 )
+            return null;
+        this.length -= 1;
+        var x = this.__a[this.length];
+        this.__a[this.length] = null;
+        return x;
+    }
+    @tmp.map = function(f) {
+        var ret = Array.new1($array(),0);
+        {
+            var _g = 0, _g1 = this;
+            while ( _g < _g1.length ) {
+                var elt = _g1[_g];
+                _g += 1;
+                ret.push(f(elt));
+            }
+        }
+        return ret;
+    }
+    @tmp.length = null;
+    @tmp.join = function(sep) {
+        var s = StringBuf.new();
+        var a = this.__a;
+        var max = this.length - 1;
+        {
+            var _g1 = 0, _g = this.length;
+            while ( _g1 < _g ) {
+                var p = _g1 ++= 1;
+                StringBuf.__add(s.b,a[p]);
+                if ( p != max )
+                    StringBuf.__add(s.b,sep);
+            }
+        }
+        return String.new(StringBuf.__to_string(s.b));
+    }
+    @tmp.iterator = function() {
+        return {
+            a => this, 
+            p => 0, 
+            hasNext => function() {
+                return this.p < this.a.length;
+            }
+            , 
+            next => function() {
+                var i = this.a.__a[this.p];
+                this.p += 1;
+                return i;
+            }
+
+
+        };
+    }
+    @tmp.insert = function(pos,x) {
+        var l = this.length;
+        if ( pos < 0 ) {
+            pos = (l + pos);
+            if ( pos < 0 )
+                pos = 0;
+        }
+        if ( pos > l )
+            pos = l;
+        this.__grow(l + 1);
+        var a = this.__a;
+        $ablit(a,pos + 1,a,pos,l - pos);
+        a[pos] = x;
+        return null;
+    }
+    @tmp.filter = function(f) {
+        var ret = Array.new1($array(),0);
+        {
+            var _g = 0, _g1 = this;
+            while ( _g < _g1.length ) {
+                var elt = _g1[_g];
+                _g += 1;
+                if ( f(elt) )
+                    ret.push(elt);
+            }
+        }
+        return ret;
+    }
+    @tmp.copy = function() {
+        return Array.new1($asub(this.__a,0,this.length),this.length);
+    }
+    @tmp.concat = function(a) {
+        var a1 = this.__a;
+        var a2 = a.__a;
+        var s1 = this.length;
+        var s2 = a.length;
+        var a3 = $amake(s1 + s2);
+        $ablit(a3,0,a1,0,s1);
+        $ablit(a3,s1,a2,0,s2);
+        return Array.new1(a3,s1 + s2);
+    }
+    @tmp.__set = function(pos,v) {
+        var a = this.__a;
+        if ( this.length <= pos ) {
+            var l = pos + 1;
+            var dlen = l - $asize(a);
+            if ( dlen > 0 ) {
+                if ( dlen == 1 ) {
+                    this.__grow(l);
+                    a = this.__a;
+                }
+                else {
+                    a = $amake(l);
+                    $ablit(a,0,this.__a,0,this.length);
+                    this.__a = a;
+                }
+            }
+            this.length = l;
+        }
+        a[pos] = v;
+        return v;
+    }
+    @tmp.__neko = function() {
+        var a = this.__a;
+        var sz = $asize(a);
+        if ( sz != this.length ) {
+            a = $asub(a,0,this.length);
+            this.__a = a;
+        }
+        return a;
+    }
+    @tmp.__grow = function(l) {
+        var a = this.__a;
+        var sz = $asize(a);
+        if ( sz >= l ) {
+            this.length = l;
+            return null;
+        }
+        var big = (sz * 3) >> 1;
+        if ( big < l )
+            big = l;
+        var a2 = $amake(big);
+        $ablit(a2,0,a,0,this.length);
+        this.__a = a2;
+        this.length = l;
+        return null;
+    }
+    @tmp.__get = function(pos) {
+        return this.__a[pos];
+    }
+    @tmp.__a = null;
+    @tmp.__serialize = @serialize;
+    @tmp.__string = @default__string;
+    var @tmp = $new(null);
+    Array = @tmp;
+    @tmp.prototype = @Array;
+    @tmp.new1 = function(a,l) {
+        var inst = Array.new();
+        inst.__a = a;
+        inst.length = l;
+        return inst;
+    }
+    @tmp.__construct__ = function() {
+        this.__a = $amake(0);
+        this.length = 0;
+        return null;
+    }
+    @tmp.new = function() {
+        var @o = $new(null);
+        $objsetproto(@o,@Array);
+        $call(this.__construct__,@o,$array());
+        return @o;
+    }
+    @Array.__class__ = Array;
+    @classes.Array = Array;
+}
+{
+    var @tmp = $new(null);
+    @InterfaceLanguage = @tmp;
+    @tmp.talk = null;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    InterfaceLanguage = @tmp;
+    @tmp.prototype = @InterfaceLanguage;
+    @InterfaceLanguage.__class__ = InterfaceLanguage;
+    @classes.InterfaceLanguage = InterfaceLanguage;
+}
+{
+    var @tmp = $new(null);
+    @Main = @tmp;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    Main = @tmp;
+    @tmp.prototype = @Main;
+    @tmp.main = function() {
+        var language;
+        language = Neko.new();
+        language.talk();
+        return null;
+    }
+    @Main.__class__ = Main;
+    @classes.Main = Main;
+}
+{
+    var @tmp = $new(null);
+    @Neko = @tmp;
+    @tmp.talk = function() {
+        haxe.Log.trace(String.new("I'm Neko !"),{
+            fileName => String.new("Neko.hx"), 
+            lineNumber => 6, 
+            className => String.new("Neko"), 
+            methodName => String.new("talk")
+
+        });
+        return null;
+    }
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    Neko = @tmp;
+    @tmp.prototype = @Neko;
+    @tmp.__construct__ = function() {
+        return null;
+    }
+    @tmp.new = function() {
+        var @o = $new(null);
+        $objsetproto(@o,@Neko);
+        $call(this.__construct__,@o,$array());
+        return @o;
+    }
+    @tmp.__interfaces__ = $array(InterfaceLanguage);
+    @Neko.__class__ = Neko;
+    @classes.Neko = Neko;
+}
+{
+    var @tmp = $new(null);
+    neko.@Boot = @tmp;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    neko.Boot = @tmp;
+    @tmp.prototype = neko.@Boot;
+    @tmp.__unserialize = function(v) {
+        if ( $typeof(v) != $tarray )
+            $throw(String.new("Invalid serialized class data"));
+        {
+            var _g1 = 0, _g = $asize(v);
+            while ( _g1 < _g ) {
+                var i = _g1 ++= 1;
+                if ( $typeof(v[i]) != $tstring )
+                    $throw(String.new("Invalid serialized class data"));
+            }
+        }
+        var cl = neko.Boot.__classes;
+        {
+            var _g1 = 0, _g = $asize(v);
+            while ( _g1 < _g ) {
+                var i = _g1 ++= 1;
+                cl = $objget(cl,$hash(v[i]));
+                if ( cl == null )
+                    $throw(String.new("Class not found ") + Std.string(v));
+            }
+        }
+        if ( $typeof(cl) == $tobject ) {
+            if ( (cl.__name__ != null) || (cl.__ename__ != null) )
+                return cl.prototype;
+            if ( (cl.__enum__ != null) && ($typeof(cl.tag) == $tstring) )
+                return cl;
+        }
+        $throw(String.new("Invalid class ") + Std.string(v));
+        return null;
+    }
+    @tmp.__tmp_str = function() {
+        return String.new("<...>").__s;
+    }
+    @tmp.__tagserialize = function(o) {
+        var n = o.__enum__.__ename__;
+        var x = $amake(n.length + 1);
+        {
+            var _g1 = 0, _g = n.length;
+            while ( _g1 < _g ) {
+                var i = _g1 ++= 1;
+                x[i] = n[i].__s;
+            }
+        }
+        x[n.length] = o.tag;
+        return x;
+    }
+    @tmp.__serialize = function(o) {
+        if ( o.__class__ != null ) {
+            var n = o.__class__.__name__;
+            var x = $amake(n.length);
+            {
+                var _g1 = 0, _g = n.length;
+                while ( _g1 < _g ) {
+                    var i = _g1 ++= 1;
+                    x[i] = n[i].__s;
+                }
+            }
+            return x;
+        }
+        if ( o.__enum__ != null ) {
+            var n = o.__enum__.__ename__;
+            var x = $amake(n.length);
+            {
+                var _g1 = 0, _g = n.length;
+                while ( _g1 < _g ) {
+                    var i = _g1 ++= 1;
+                    x[i] = n[i].__s;
+                }
+            }
+            return x;
+        }
+        $throw(String.new("Can't serialize"));
+        return null;
+    }
+    @tmp.__interfLoop = function(cc,cl) {
+        if ( cc == null )
+            return false;
+        if ( cc == cl )
+            return true;
+        var intf = cc.__interfaces__;
+        if ( intf != null ) {
+            var _g1 = 0, _g = intf.length;
+            while ( _g1 < _g ) {
+                var i = _g1 ++= 1;
+                var i1 = intf[i];
+                if ( (i1 == cl) || neko.Boot.__interfLoop(i1,cl) )
+                    return true;
+            }
+        }
+        return neko.Boot.__interfLoop(cc.__super__,cl);
+    }
+    @tmp.__instanceof = function(o,cl) {
+        if ( cl == Dynamic )
+            return true;
+        {
+            var _g = $typeof(o);
+            switch ( _g ){
+            1 => 
+                return (cl == Int) || (cl == Float)
+            2 => 
+                return (cl == Float) || ((cl == Int) && ($int(o) == o))
+            3 => 
+                return cl == Bool
+            5 => 
+                {
+                    if ( cl == null )
+                        return false;
+                    return ((neko.Boot.__interfLoop(o.__class__,cl) || (o.__enum__ == cl)) || ((cl == Class) && (o.__name__ != null))) || ((cl == Enum) && (o.__ename__ != null));
+                }
+
+            default => 
+                return false
+            }
+        }
+        return null;
+    }
+    @tmp.__init = function() {
+        $exports.__unserialize = neko.Boot.__unserialize;
+        $exports.__classes = neko.Boot.__classes;
+        return null;
+    }
+    @tmp.__enum_str = function(e) {
+        if ( e.args == null )
+            return e.tag;
+        var s = e.tag + String.new("(").__s;
+        var i = 0;
+        var l = $asize(e.args);
+        var old = e.__string;
+        e.__string = neko.Boot.__tmp_str;
+        while ( i < l ) {
+            if ( i != 0 )
+                s += String.new(",").__s;
+            try {
+                s += $string(e.args[i]);
+            }
+            catch @tmp {
+                if $typeof(@tmp) == $tstring
+                    @tmp = String.new(@tmp);
+                if true {
+                    var err = @tmp;
+                    {
+                        s += neko.Boot.__tmp_str();
+                    }
+                }
+                else
+                    $rethrow(@tmp)
+            }
+            i += 1;
+        }
+        e.__string = old;
+        return s + String.new(")").__s;
+    }
+    neko.@Boot.__class__ = neko.Boot;
+}
+{
+    var @tmp = $new(null);
+    @Std = @tmp;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    Std = @tmp;
+    @tmp.prototype = @Std;
+    @tmp.string = function(s) {
+        return String.new($string(s));
+    }
+    @Std.__class__ = Std;
+    @classes.Std = Std;
+}
+{
+    var @tmp = $new(null);
+    @String = @tmp;
+    @tmp.toUpperCase = function() {
+        var s = this.__s;
+        var l = this.length;
+        var s2 = $scopy(s);
+        var i = 0;
+        while ( i < l ) {
+            var c = $sget(s,i);
+            if ( (c >= 97) && (c <= 122) )
+                $sset(s2,i,(c - 97) + 65);
+            i ++= 1;
+        }
+        return String.new(s2);
+    }
+    @tmp.toString = function() {
+        return this;
+    }
+    @tmp.toLowerCase = function() {
+        var s = this.__s;
+        var l = this.length;
+        var s2 = $scopy(s);
+        var i = 0;
+        while ( i < l ) {
+            var c = $sget(s,i);
+            if ( (c >= 65) && (c <= 90) )
+                $sset(s2,i,(c - 65) + 97);
+            i ++= 1;
+        }
+        return String.new(s2);
+    }
+    @tmp.substring = function(startIndex,endIndex) {
+        if ( endIndex == null )
+            endIndex = this.length
+        else
+            if ( endIndex < 0 )
+                endIndex = 0
+            else
+                if ( endIndex > this.length )
+                    endIndex = this.length;
+
+
+        if ( startIndex < 0 )
+            startIndex = 0
+        else
+            if ( startIndex > this.length )
+                startIndex = this.length;
+
+        if ( startIndex > endIndex ) {
+            var tmp = startIndex;
+            startIndex = endIndex;
+            endIndex = tmp;
+        }
+        return this.substr(startIndex,endIndex - startIndex);
+    }
+    @tmp.substr = function(pos,len) {
+        if ( len == 0 )
+            return String.new("");
+        var sl = this.length;
+        if ( len == null )
+            len = sl;
+        if ( pos == null )
+            pos = 0;
+        if ( (pos != 0) && (len < 0) )
+            return String.new("");
+        if ( pos < 0 ) {
+            pos = (sl + pos);
+            if ( pos < 0 )
+                pos = 0;
+        }
+        else
+            if ( len < 0 )
+                len = ((sl + len) - pos);
+
+        if ( (pos + len) > sl )
+            len = (sl - pos);
+        if ( (pos < 0) || (len <= 0) )
+            return String.new("");
+        return String.new($ssub(this.__s,pos,len));
+    }
+    @tmp.split = function(delimiter) {
+        var l = String.__split(this.__s,delimiter.__s);
+        var a = Array.new();
+        if ( l == null ) {
+            a.push(String.new(""));
+            return a;
+        }
+        do  {
+            a.push(String.new(l[0]));
+            l = l[1];
+        }
+        while ( l != null )
+        return a;
+    }
+    @tmp.length = null;
+    @tmp.lastIndexOf = function(str,startIndex) {
+        var last = -1;
+        if ( startIndex == null )
+            startIndex = $ssize(this.__s);
+        while ( true ) {
+            var p = try {
+                $sfind(this.__s,last + 1,str.__s);
+            }
+            catch @tmp {
+                if $typeof(@tmp) == $tstring
+                    @tmp = String.new(@tmp);
+                if true {
+                    var e = @tmp;
+                    {
+                        null;
+                    }
+                }
+                else
+                    $rethrow(@tmp)
+            }
+            ;
+            if ( (p == null) || (p > startIndex) )
+                return last;
+            last = p;
+        }
+        return null;
+    }
+    @tmp.indexOf = function(str,startIndex) {
+        var p = try {
+            $sfind(this.__s,if ( startIndex == null )
+                0
+            else
+                startIndex
+            ,str.__s);
+        }
+        catch @tmp {
+            if $typeof(@tmp) == $tstring
+                @tmp = String.new(@tmp);
+            if true {
+                var e = @tmp;
+                {
+                    null;
+                }
+            }
+            else
+                $rethrow(@tmp)
+        }
+        ;
+        if ( p == null )
+            return -1;
+        return p;
+    }
+    @tmp.charCodeAt = function(index) {
+        return $sget(this.__s,index);
+    }
+    @tmp.charAt = function(index) {
+        try {
+            var s = $smake(1);
+            $sset(s,0,$sget(this.__s,index));
+            return String.new(s);
+        }
+        catch @tmp {
+            if $typeof(@tmp) == $tstring
+                @tmp = String.new(@tmp);
+            if true {
+                var e = @tmp;
+                {
+                    return String.new("");
+                }
+            }
+            else
+                $rethrow(@tmp)
+        }
+        return null;
+    }
+    @tmp.__radd = function(s) {
+        return String.new($string(s) + this.__s);
+    }
+    @tmp.__compare = function(o) {
+        return $compare(this.__s,o.__s);
+    }
+    @tmp.__add = function(s) {
+        return String.new(this.__s + $string(s));
+    }
+    @tmp.__serialize = @serialize;
+    @tmp.__string = @default__string;
+    var @tmp = $new(null);
+    String = @tmp;
+    @tmp.prototype = @String;
+    @tmp.fromCharCode = function(code) {
+        var s = $smake(1);
+        $sset(s,0,code);
+        return String.new(s);
+    }
+    @tmp.__split = $loader.loadprim(("std" + "@") + "string_split",2);
+    @tmp.__is_String = null;
+    @tmp.__construct__ = function(string) {
+        if ( $typeof(string) != $tstring )
+            string = $string(string);
+        this.__s = string;
+        this.length = $ssize(string);
+        return null;
+    }
+    @tmp.new = function(string) {
+        var @o = $new(null);
+        $objsetproto(@o,@String);
+        $call(this.__construct__,@o,$array(string));
+        return @o;
+    }
+    @String.__class__ = String;
+    @classes.String = String;
+}
+{
+    var @tmp = $new(null);
+    @StringBuf = @tmp;
+    @tmp.b = null;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    StringBuf = @tmp;
+    @tmp.prototype = @StringBuf;
+    @tmp.__to_string = $loader.loadprim(("std" + "@") + "buffer_string",1);
+    @tmp.__make = $loader.loadprim(("std" + "@") + "buffer_new",0);
+    @tmp.__add_char = $loader.loadprim(("std" + "@") + "buffer_add_char",2);
+    @tmp.__add = $loader.loadprim(("std" + "@") + "buffer_add",2);
+    @tmp.__construct__ = function() {
+        this.b = StringBuf.__make();
+        return null;
+    }
+    @tmp.new = function() {
+        var @o = $new(null);
+        $objsetproto(@o,@StringBuf);
+        $call(this.__construct__,@o,$array());
+        return @o;
+    }
+    @StringBuf.__class__ = StringBuf;
+    @classes.StringBuf = StringBuf;
+}
+{
+    var @tmp = $new(null);
+    haxe.@Log = @tmp;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    haxe.Log = @tmp;
+    @tmp.prototype = haxe.@Log;
+    @tmp.trace = function(v,infos) {
+        $print(((infos.fileName + String.new(":")) + infos.lineNumber) + String.new(": "),v);
+        if ( infos.customParams != null ) {
+            var _g = 0, _g1 = infos.customParams;
+            while ( _g < _g1.length ) {
+                var v1 = _g1[_g];
+                _g += 1;
+                $print(String.new(","),v1);
+            }
+        }
+        $print(String.new("\n"));
+        return null;
+    }
+    haxe.@Log.__class__ = haxe.Log;
+}
+{
+    var @tmp = $new(null);
+    neko.@NativeArray = @tmp;
+    @tmp.__serialize = @serialize;
+    var @tmp = $new(null);
+    neko.NativeArray = @tmp;
+    @tmp.prototype = neko.@NativeArray;
+    neko.@NativeArray.__class__ = neko.NativeArray;
+}
+{
+    neko.Boot.__classes = @classes;
+    neko.Boot.__init();
+}
+neko.NativeArray.__name__ = Array.new1($array(String.new("neko"),String.new("NativeArray")),2);
+haxe.Log.__name__ = Array.new1($array(String.new("haxe"),String.new("Log")),2);
+StringBuf.__name__ = Array.new1($array(String.new("StringBuf")),1);
+String.__name__ = Array.new1($array(String.new("String")),1);
+Std.__name__ = Array.new1($array(String.new("Std")),1);
+neko.Boot.__name__ = Array.new1($array(String.new("neko"),String.new("Boot")),2);
+Neko.__name__ = Array.new1($array(String.new("Neko")),1);
+Neko.__interfaces__ = Array.new1(Neko.__interfaces__,1);
+Main.__name__ = Array.new1($array(String.new("Main")),1);
+InterfaceLanguage.__name__ = Array.new1($array(String.new("InterfaceLanguage")),1);
+Array.__name__ = Array.new1($array(String.new("Array")),1);
+neko.Lib.__name__ = Array.new1($array(String.new("neko"),String.new("Lib")),2);
+try {
+    var msort = $array(neko.Lib.load(String.new("std"),String.new("merge_sort"),3));
+    Array.prototype.sort = function(cmp) {
+        msort[0](this.__a,this.length,cmp);
+        return null;
+    }
+}
+catch @tmp {
+    if $typeof(@tmp) == $tstring
+        @tmp = String.new(@tmp);
+    if true {
+        var e = @tmp;
+        {
+        }
+    }
+    else
+        $rethrow(@tmp)
+}
+{
+    Int = {
+        __name__ => Array.new1($array(String.new("Int")),1)
+
+    };
+    Float = {
+        __name__ => Array.new1($array(String.new("Float")),1)
+
+    };
+    Bool = {
+        __ename__ => Array.new1($array(String.new("Bool")),1)
+
+    };
+    Dynamic = {
+        __name__ => Array.new1($array(String.new("Dynamic")),1)
+
+    };
+    Class = {
+        __name__ => Array.new1($array(String.new("Class")),1)
+
+    };
+    Enum = $new(null);
+    var cl = neko.Boot.__classes;
+    cl.Int = Int;
+    cl.Float = Float;
+    cl.Bool = Bool;
+    cl.Dynamic = Dynamic;
+    cl.Class = Class;
+    cl.Enum = Enum;
+}
+String.__is_String = true;
+String.__split = neko.Lib.load(String.new("std"),String.new("string_split"),2);
+StringBuf.__make = neko.Lib.load(String.new("std"),String.new("buffer_new"),0);
+StringBuf.__add = neko.Lib.load(String.new("std"),String.new("buffer_add"),2);
+StringBuf.__add_char = neko.Lib.load(String.new("std"),String.new("buffer_add_char"),2);
+StringBuf.__to_string = neko.Lib.load(String.new("std"),String.new("buffer_string"),1);
+Main.main();

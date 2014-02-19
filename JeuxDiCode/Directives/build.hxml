@@ -1,0 +1,6 @@
+-main Main
+-js build/main.js
+--next
+-main Main
+-neko build/main.n
+-D neko-source

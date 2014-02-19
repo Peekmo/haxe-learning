@@ -1,2 +1,2 @@
 -main Haxe
--js haxe.js
+-js build/haxe.js

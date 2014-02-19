@@ -1,0 +1,8 @@
+# Tests
+-cp src
+-cp test
+-main MainTest
+-neko tests.n
+-cmd "neko tests.n"
+
+
