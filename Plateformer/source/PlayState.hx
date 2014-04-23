@@ -26,6 +26,8 @@ class PlayState extends FlxState
 
 	private var text : FlxText;
 
+	private var healthBar : FlxSprite;
+
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
@@ -57,8 +59,14 @@ class PlayState extends FlxState
 			this.bananas.add(banana);
 		}
 
-		this.text = new FlxText(0, 0, 50, "- Welcome -");
+		this.text = new FlxText(0, 0, 70, "- Welcome -");
 		this.add(this.text);
+
+		FlxG.camera.follow(this.player);
+		FlxG.worldBounds.set(0, 0, this.map.width, this.map.height);
+
+		this.text.scrollFactor.x = 0;
+		this.text.scrollFactor.y = 0;
 
 		super.create();
 	}
