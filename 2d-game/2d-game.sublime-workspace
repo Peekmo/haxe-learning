@@ -1,0 +1,684 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"he",
+				"height	Float"
+			],
+			[
+				"max",
+				"maxVelocity	flixel.util.FlxPoint"
+			],
+			[
+				"Pla",
+				"PlayState	class"
+			],
+			[
+				"S",
+				"StringMap	class"
+			],
+			[
+				"Objec",
+				"ObjectDynamic	cookix.tools"
+			],
+			[
+				"decl",
+				"declarations	var"
+			],
+			[
+				"m",
+				"merge(...)	Array<cookix.core.routing.RouteType>"
+			],
+			[
+				"req",
+				"requirements	var"
+			],
+			[
+				"routes",
+				"routesDeclaration	var"
+			],
+			[
+				"Arr",
+				"ArrayTools	class"
+			],
+			[
+				"Rout",
+				"RouteType	cookix.core.routing"
+			],
+			[
+				"B",
+				"BeforeControllerEvent	class"
+			],
+			[
+				"controll",
+				"controllersDecoded	var"
+			],
+			[
+				"Obje",
+				"ObjectDynamic	cookix.tools"
+			],
+			[
+				"to",
+				"toLowerCase()	String"
+			],
+			[
+				"r",
+				"remove(...)	Bool"
+			],
+			[
+				"l",
+				"length	Int"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/Main.hx",
+			"settings":
+			{
+				"buffer_size": 871,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 355.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"view",
+				"View: Toggle Menu"
+			],
+			[
+				"al",
+				"AlignTab"
+			],
+			[
+				"alig",
+				"AlignTab"
+			],
+			[
+				"",
+				"AlignTab"
+			],
+			[
+				"vie",
+				"View: Toggle Menu"
+			],
+			[
+				"ali",
+				"AlignTab"
+			],
+			[
+				"align",
+				"AlignTab"
+			],
+			[
+				"view si",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/peekmo/.config/sublime-text-3/Packages/User/Flixel.sublime-build",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/source/GameClass.hx",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/source/PlayState.hx",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/source/MenuState.hx",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/build.hxml",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/controllers/DemoController.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/Boot.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/RoutingMacro.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/Kernel.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/controller/Resolver.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/AbstractParametersBag.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/views/test.tpl",
+		"/home/peekmo/Haxe/Cookix/cookix/exceptions/ServiceCompilerException.hx",
+		"/home/peekmo/Haxe/Cookix/README.md",
+		"/home/peekmo/Haxe/Cookix-Demo/README.md",
+		"/home/peekmo/Haxe/Cookix-Demo/application/config/bundles.json",
+		"/home/peekmo/Haxe/Cookix-Demo/build.hxml",
+		"/home/peekmo/Haxe/Cookix-Demo/LICENSE",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/routing/Routing.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/RouteType.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/config/routing.json",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/config/routing2.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/RoutingParameters.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/services.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/ServiceMacro.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/event/EventDispatcher.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/StringMapWX.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/ServiceType.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/AbstractRequest.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ArrayTools.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/Request.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/RequestPhp.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/views/fonts/glyphicons-halflings-regular.svg",
+		"/home/peekmo/Haxe/Cookix/cookix/exceptions/InvalidArgumentException.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/context/Context.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ObjectDynamicIterator.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/config/config.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/config/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/controller/Controller.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/routing.json",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ObjectDynamic.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/views/js/bootstrap.js",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/config.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/RoutingTools.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/ConfigurationMacro.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/response/Response.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/Route.hx",
+		"/home/peekmo/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/services/DemoService.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/ServiceContainer.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/response/ResponseEvent.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/RequestEvent.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/Service.hx",
+		"/home/peekmo/Haxe/Cookix/lib/cookix/core/config/infos.json",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/config/services.json",
+		"/home/peekmo/Haxe/Cookix/haxelib.json",
+		"/home/peekmo/Haxe/Cookix/build.hxml",
+		"/home/peekmo/Haxe/Cookix/application/config/bundles.json",
+		"/home/peekmo/Haxe/Cookix/lib/wx/core/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix/src/wx/demo/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix/lib/wx/tools/macro/ClassMetadata.hx",
+		"/home/peekmo/Haxe/WhaXe/application/Boot.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/container/Service.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/container/ServiceContainer.hx",
+		"/home/peekmo/Haxe/WhaXe/build.hxml",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/container/ServiceMacro.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/services/event/EventDispatcher.hx",
+		"/home/peekmo/Haxe/WhaXe/src/wx/demo/views/test.tpl",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/exceptions/ServiceCompilerException.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/config/config.json",
+		"/home/peekmo/Haxe/WhaXe/src/wx/demo/Configuration.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/Configuration.hx",
+		"/home/peekmo/Haxe/WhaXe/application/config/config.json",
+		"/home/peekmo/Haxe/WhaXe/src/wx/demo/config/config.json",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/config/ConfigurationMacro.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/services/config/Configuration.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/tools/macro/ClassMetadata.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/container/TagType.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/config/services.json",
+		"/home/peekmo/Haxe/WhaXe/README.md",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/http/request/RequestEvent.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/tools/macro/Metadata.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/core/events/Subscriber.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/tools/macro/MetadataType.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/tools/macro/MacroMetadataReader.hx",
+		"/home/peekmo/Haxe/WhaXe/src/wx/demo/config/services.json",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/templating/TemplateManager.hx",
+		"/home/peekmo/Haxe/WhaXe/lib/wx/exceptions/Exception.hx",
+		"/home/peekmo/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"width",
+			"req.",
+			"req",
+			"serviceClass",
+			"routesDeclarations",
+			"declarations",
+			"this.",
+			"types",
+			"value",
+			"replace",
+			"configuration",
+			"replace"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/Main.hx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "2d-game.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rea",
+				"Cookix/README.md"
+			],
+			[
+				"",
+				"Cookix-Demo/application/Boot.hx"
+			],
+			[
+				"routingm",
+				"Cookix/cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"routingma",
+				"Cookix/cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"routet",
+				"Cookix/cookix/core/routing/RouteType.hx"
+			],
+			[
+				"routingpa",
+				"Cookix/cookix/core/http/parameters/RoutingParameters.hx"
+			],
+			[
+				"routing",
+				"Cookix/cookix/core/services/routing/Routing.hx"
+			],
+			[
+				"stringmap",
+				"Cookix/cookix/tools/StringMapWX.hx"
+			],
+			[
+				"astr",
+				"Cookix/cookix/core/http/parameters/AbstractParametersBag.hx"
+			],
+			[
+				"routingpar",
+				"Cookix/cookix/core/http/parameters/RoutingParameters.hx"
+			],
+			[
+				"abstra",
+				"Cookix/cookix/core/http/request/AbstractRequest.hx"
+			],
+			[
+				"reques",
+				"Cookix/cookix/core/http/request/Request.hx"
+			],
+			[
+				"conte",
+				"Cookix/cookix/core/services/context/Context.hx"
+			],
+			[
+				"resolv",
+				"Cookix/cookix/core/services/controller/Resolver.hx"
+			],
+			[
+				"kernel",
+				"Cookix/cookix/core/Kernel.hx"
+			],
+			[
+				"dispa",
+				"Cookix/cookix/core/services/event/EventDispatcher.hx"
+			],
+			[
+				"kerne",
+				"Cookix/cookix/core/Kernel.hx"
+			],
+			[
+				"cont",
+				"Cookix/cookix/core/services/context/Context.hx"
+			],
+			[
+				"services.",
+				"Cookix/cookix/core/config/services.json"
+			],
+			[
+				"routing.j",
+				"Cookix/cookix/core/config/routing.json"
+			],
+			[
+				"routety",
+				"Cookix/cookix/core/routing/RouteType.hx"
+			],
+			[
+				"obej",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"servic",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"boot",
+				"Cookix-Demo/application/Boot.hx"
+			],
+			[
+				"configur",
+				"Cookix/cookix/core/config/ConfigurationMacro.hx"
+			],
+			[
+				"resolve",
+				"Cookix/cookix/core/services/controller/Resolver.hx"
+			],
+			[
+				"routin",
+				"Cookix/cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"service",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"servicema",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"bo",
+				"Cookix-Demo/src/cookix/demo/views/js/bootstrap.js"
+			],
+			[
+				"configuration",
+				"Cookix/cookix/core/Configuration.hx"
+			],
+			[
+				"obje",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"objec",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"configura",
+				"Cookix/cookix/core/config/ConfigurationMacro.hx"
+			],
+			[
+				"democon",
+				"Cookix-Demo/src/cookix/demo/controllers/DemoController.hx"
+			],
+			[
+				"configu",
+				"Cookix/cookix/core/services/config/Configuration.hx"
+			],
+			[
+				"config.",
+				"Cookix-Demo/application/config/config.json"
+			],
+			[
+				"buil",
+				"Cookix-Demo/build.hxml"
+			],
+			[
+				"configurationmac",
+				"Cookix/cookix/core/config/ConfigurationMacro.hx"
+			],
+			[
+				"servicea",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"democ",
+				"Cookix-Demo/src/cookix/demo/controllers/DemoController.hx"
+			],
+			[
+				"re",
+				"Cookix-Demo/README.md"
+			],
+			[
+				"demose",
+				"Cookix-Demo/src/cookix/demo/services/DemoService.hx"
+			],
+			[
+				"servicecon",
+				"Cookix/cookix/core/container/ServiceContainer.hx"
+			],
+			[
+				"confi",
+				"lib/wx/core/Configuration.hx"
+			],
+			[
+				"tagt",
+				"lib/wx/core/container/TagType.hx"
+			],
+			[
+				"service.hx",
+				"lib/wx/core/container/Service.hx"
+			],
+			[
+				"servicec",
+				"lib/wx/core/container/ServiceContainer.hx"
+			],
+			[
+				"servicem",
+				"lib/wx/core/container/ServiceMacro.hx"
+			],
+			[
+				"metadata",
+				"lib/wx/tools/macro/Metadata.hx"
+			],
+			[
+				"class",
+				"lib/wx/tools/macro/ClassMetadata.hx"
+			],
+			[
+				"configuratio",
+				"lib/wx/core/services/config/Configuration.hx"
+			],
+			[
+				"tagty",
+				"lib/wx/core/container/TagType.hx"
+			],
+			[
+				"servicecn",
+				"lib/wx/core/container/ServiceContainer.hx"
+			],
+			[
+				"subs",
+				"lib/wx/core/events/Subscriber.hx"
+			],
+			[
+				"eventdi",
+				"lib/wx/core/services/event/EventDispatcher.hx"
+			],
+			[
+				"bui",
+				"build.hxml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
