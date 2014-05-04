@@ -1,0 +1,1180 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"al",
+				"alpha	Float"
+			],
+			[
+				"Bitmap",
+				"FlxBitmapUtil	flixel.util"
+			],
+			[
+				"Grap",
+				"GraphicsBitmapFill	nme.display"
+			],
+			[
+				"Graph",
+				"GraphicDefault	flixel.FlxSprite"
+			],
+			[
+				"set",
+				"setPixel32(...)	Void"
+			],
+			[
+				"Color",
+				"ColorMatrixFilter	nme.filters"
+			],
+			[
+				"Bitma",
+				"FlxBitmapDataPool	flixel.util"
+			],
+			[
+				"a",
+				"addFilter(...)	Void"
+			],
+			[
+				"FlxFil",
+				"FlxSpriteFilter	flixel.effects"
+			],
+			[
+				"co",
+				"bgColor	Int"
+			],
+			[
+				"ba",
+				"set_bgColor( Value : Int )	Int"
+			],
+			[
+				"get",
+				"getText( id : String )	String"
+			],
+			[
+				"commandC",
+				"commandClass	var"
+			],
+			[
+				"command",
+				"commandCreated	var"
+			],
+			[
+				"comma",
+				"commandsDecoded	var"
+			],
+			[
+				"comm",
+				"commandData	var"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"opti",
+				"options"
+			],
+			[
+				"it",
+				"iterator"
+			],
+			[
+				"doR",
+				"doInstallRequirements	function"
+			],
+			[
+				"Requ",
+				"RequirementsInfos	class"
+			],
+			[
+				"cur",
+				"curversion	String"
+			],
+			[
+				"doInst",
+				"doInstallRequirements	function"
+			],
+			[
+				"re",
+				"requirements	Array<tools.haxelib.RequirementsInfos>"
+			],
+			[
+				"va",
+				"valueMandatory	Bool"
+			],
+			[
+				"has",
+				"hasValue	Bool"
+			],
+			[
+				"v",
+				"valueMandatory	Bool"
+			],
+			[
+				"prn",
+				"println( v : Dynamic )	Void"
+			],
+			[
+				"Command",
+				"CommandReader	class"
+			],
+			[
+				"Comma",
+				"CommandReader	class"
+			],
+			[
+				"prin",
+				"println( v : Dynamic )	Void"
+			],
+			[
+				"us",
+				"userDir	String"
+			],
+			[
+				"create",
+				"createFile	function"
+			],
+			[
+				"root",
+				"rootFolder	var"
+			],
+			[
+				"sub",
+				"substr( pos : Int , ?len : Int )	String"
+			],
+			[
+				"class",
+				"classPaths	var"
+			],
+			[
+				"Co",
+				"Context	class"
+			],
+			[
+				"cl",
+				"classPath	var"
+			],
+			[
+				"getF",
+				"getFilesFromClassPath	function"
+			],
+			[
+				"S",
+				"Sys	class"
+			],
+			[
+				"par",
+				"parseInt( x : String )	Null<Int>"
+			],
+			[
+				"config",
+				"configuration	var"
+			],
+			[
+				"Json",
+				"JsonParser	cookix.tools"
+			],
+			[
+				"Fil",
+				"FileInput	sys.io"
+			],
+			[
+				"FileS",
+				"FileSystem	sys"
+			],
+			[
+				"File",
+				"FileSystem	class"
+			],
+			[
+				"Strin",
+				"StringMap	class"
+			],
+			[
+				"g",
+				"getPlaneConfiguration()	Dynamic"
+			],
+			[
+				"Confi",
+				"ConfigurationMacro	cookix.core.config"
+			],
+			[
+				"mak",
+				"makeExpr"
+			],
+			[
+				"Obj",
+				"ObjectDynamic"
+			],
+			[
+				"pro",
+				"priority"
+			],
+			[
+				"he",
+				"height	Float"
+			],
+			[
+				"max",
+				"maxVelocity	flixel.util.FlxPoint"
+			],
+			[
+				"Pla",
+				"PlayState	class"
+			],
+			[
+				"Objec",
+				"ObjectDynamic	cookix.tools"
+			],
+			[
+				"decl",
+				"declarations	var"
+			],
+			[
+				"m",
+				"merge(...)	Array<cookix.core.routing.RouteType>"
+			],
+			[
+				"req",
+				"requirements	var"
+			],
+			[
+				"routes",
+				"routesDeclaration	var"
+			],
+			[
+				"Arr",
+				"ArrayTools	class"
+			],
+			[
+				"Rout",
+				"RouteType	cookix.core.routing"
+			],
+			[
+				"B",
+				"BeforeControllerEvent	class"
+			],
+			[
+				"controll",
+				"controllersDecoded	var"
+			],
+			[
+				"Obje",
+				"ObjectDynamic	cookix.tools"
+			],
+			[
+				"to",
+				"toLowerCase()	String"
+			],
+			[
+				"r",
+				"remove(...)	Bool"
+			],
+			[
+				"l",
+				"length	Int"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/source/PlayState.hx",
+			"settings":
+			{
+				"buffer_size": 2894,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/completion.hxml",
+			"settings":
+			{
+				"buffer_size": 102,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Flixel.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"",
+				"AlignTab"
+			],
+			[
+				"al",
+				"AlignTab"
+			],
+			[
+				"vie",
+				"View: Toggle Menu"
+			],
+			[
+				"ali",
+				"AlignTab"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Github Flavored Markdown: Export HTML in Sublime Text"
+			],
+			[
+				"makerdo",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"previ",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"alig",
+				"AlignTab"
+			],
+			[
+				"align",
+				"AlignTab"
+			],
+			[
+				"view si",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 633.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/peekmo/Haxe/haxe-learning/effects/build.hxml",
+		"/home/peekmo/Haxe/haxe-learning/effects/assets/data/map.csv",
+		"/home/peekmo/Haxe/haxe-learning/effects/Project.xml",
+		"/home/peekmo/Haxe/haxe-learning/effects/source/GameClass.hx",
+		"/home/peekmo/Haxe/haxe-learning/effects/source/PlayState.hx",
+		"/usr/lib/haxe/lib/flixel/3,2,2/include.xml",
+		"/usr/lib/haxe/std/js/html/svg/PathSegLinetoAbs.hx",
+		"/usr/lib/haxe/std/js/html/svg/PointList.hx",
+		"/home/peekmo/Haxe/Cookix/script/src/RunScript.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/console/CommandReader.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/commands/DemoCommand.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/command/Command.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/command/CommandMacro.hx",
+		"/home/peekmo/Haxe/Cookix/script/src/commands/Project.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/command/HelpCommand.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/command/ICommand.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/Command.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/context/Context.hx",
+		"/home/peekmo/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/ServiceMacro.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/build.hxml",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/macro/ClassMetadata.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/macro/MacroMetadataReader.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/RoutingMacro.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/macro/Metadata.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/Boot.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/FolderReader.hx",
+		"/var/www/Symfony/app/config/security.yml",
+		"/var/www/Symfony/src/Axel/Test/TestBundle/Controller/DefaultController.php",
+		"/var/www/Symfony/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/JsonResponse.php",
+		"/var/www/Symfony/vendor/twig/twig/doc/filters/json_encode.rst",
+		"/var/www/Symfony/src/Nelmio/ApiDocBundle/Extractor/Handler/JmsSecurityExtraHandler.php",
+		"/var/www/Symfony/vendor/swiftmailer/swiftmailer/doc/japanese.rst",
+		"/var/www/Symfony/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Response.php",
+		"/var/www/Symfony/src/Nelmio/ApiDocBundle/Resources/views/resource.html.twig",
+		"/var/www/Symfony/README.md",
+		"/var/www/Symfony/web/app_dev.php",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ds/StringMapTools.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/console/Console.hx",
+		"/home/peekmo/Haxe/Cookix/README.md",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/console/CliException.hx",
+		"/home/peekmo/Haxe/Cookix/LICENSE",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/console/CommandReader.hx/startupCache.8.little",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/console/CommandRunner.hx",
+		"/home/peekmo/Haxe/Cookix/console/ConsoleScript.hx",
+		"/home/peekmo/Haxe/Cookix/script/build.hxml",
+		"/home/peekmo/Haxe/Haxelib-Fake/haxelib.json",
+		"/home/peekmo/Haxe/haxelib/src/tools/haxelib/Main.hx",
+		"/home/peekmo/Haxe/haxelib/src/tools/haxelib/Data.hx",
+		"/home/peekmo/Haxe/Peekmo-haxe-tools/haxelib.json",
+		"/home/peekmo/Haxe/Cookix/cookix/exceptions/ServiceCompilerException.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/views/test.tpl",
+		"/home/peekmo/Haxe/Cookix/command/CookixCommand.hx",
+		"/home/peekmo/Haxe/Cookix/script/src/CliException.hx",
+		"/home/peekmo/Haxe/Cookix/script/src/CommandReader.hx",
+		"/home/peekmo/Haxe/Cookix/script/src/ProjectBuilder.hx",
+		"/home/peekmo/Haxe/Cookix/script/src/Console.hx",
+		"/home/peekmo/Haxe/Cookix/script/templates/base/application/config/config.json",
+		"/home/peekmo/Haxe/Cookix/script/src/CommandMacro.hx",
+		"/home/peekmo/Haxe/Cookix/script/templates/base/build.hxml",
+		"/home/peekmo/Haxe/Cookix/script/templates/base/application/Boot.hx",
+		"/home/peekmo/Haxe/Cookix/script/templates/bundle/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/container/Service.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/event/EventDispatcher.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/controller/Controller.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/ServiceContainer.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/Kernel.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/routing/Routing.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/RoutingParameters.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/README.md",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/config/routing.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/routing.json",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/config/routing2.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/RouteType.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/routing/RoutingTools.hx",
+		"/home/peekmo/Haxe/CodinGame-Haxe/CodinGame/JS/AprilEasy.js",
+		"/home/peekmo/Haxe/CodinGame-Haxe/CodinGame/JS/AprilHard.js",
+		"/home/peekmo/Haxe/CodinGame-Haxe/CodinGame/AprilEasy.hx",
+		"/home/peekmo/Haxe/CodinGame-Haxe/CodinGame/AprilHard.hx",
+		"/home/peekmo/Haxe/CodinGame-Haxe/build.hxml",
+		"/home/peekmo/Haxe/CodinGame-Haxe/CodinGame/JS/April.js",
+		"/home/peekmo/Haxe/CodinGame-Haxe/CodinGame/April.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/ConfigurationMacro.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix/script/RunScript.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/services/DemoService.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/Service.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/controller/Resolver.hx",
+		"/home/peekmo/Haxe/Cookix/docs/1_introduction.md",
+		"/home/peekmo/Haxe/Cookix/cookix/core/config/services.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/services/config/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/exports/config/dump_services.json",
+		"/home/peekmo/Haxe/Cookix/cookix/exceptions/FileNotFoundException.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/views/fonts/glyphicons-halflings-regular.svg",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/AbstractParametersBag.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/QueryParameters.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/HeaderParameters.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/parameters/PostParameters.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/config/parameters.json",
+		"/home/peekmo/Haxe/Cookix/haxelib.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/AbstractRequest.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ObjectDynamic.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/Configuration.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/application/config/config.json",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/controllers/DemoController.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/TagType.hx",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/views/fonts/glyphicons-halflings-regular.woff",
+		"/home/peekmo/Haxe/Cookix-Demo/src/cookix/demo/config/services.json",
+		"/home/peekmo/Haxe/Cookix/cookix/core/container/ServiceType.hx",
+		"/home/peekmo/Haxe/Nosween/Project.xml",
+		"/home/peekmo/Haxe/Nosween/source/GameClass.hx",
+		"/home/peekmo/Haxe/Nosween/source/MenuState.hx",
+		"/home/peekmo/Haxe/haxe-learning/2d-game/source/GameClass.hx",
+		"/home/peekmo/Haxe/haxe-learning/2d-game/source/Player.hx",
+		"/home/peekmo/Haxe/haxe-learning/2d-game/source/PlayState.hx",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/source/PlayState.hx",
+		"/home/peekmo/Haxe/haxe-learning/2d-game/source/Main.hx",
+		"/home/peekmo/.config/sublime-text-3/Packages/User/Flixel.sublime-build",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/source/GameClass.hx",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/source/MenuState.hx",
+		"/home/peekmo/Haxe/haxe-learning/Plateformer/build.hxml",
+		"/home/peekmo/Haxe/Cookix-Demo/application/config/bundles.json",
+		"/home/peekmo/Haxe/Cookix-Demo/LICENSE",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/StringMapWX.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ArrayTools.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/Request.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/RequestPhp.hx",
+		"/home/peekmo/Haxe/Cookix/cookix/exceptions/InvalidArgumentException.hx"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"openfl",
+			"50",
+			"100",
+			"0",
+			"1",
+			"0",
+			"function",
+			"name",
+			"service",
+			"CliException",
+			"length",
+			"commands",
+			"Sys",
+			"Sys.println",
+			"command",
+			"path()",
+			"extraparam",
+			"package",
+			"requirement",
+			"git",
+			"doInstall",
+			"git",
+			"Console",
+			"console",
+			"Console",
+			"console",
+			"this",
+			" : Int;",
+			"public static var",
+			"AprilEasy",
+			"April",
+			"}\");\n",
+			"StringMapWX",
+			"default",
+			"StringMapWX",
+			"ifNull",
+			"map",
+			"planeConfiguration",
+			"services",
+			"attribute",
+			"exists",
+			"width",
+			"req.",
+			"req",
+			"serviceClass",
+			"routesDeclarations",
+			"declarations",
+			"this.",
+			"types",
+			"value",
+			"replace",
+			"configuration",
+			"replace"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/source/PlayState.hx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								815,
+								815
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/completion.hxml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Hxml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "effects.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pla",
+				"effects/source/PlayState.hx"
+			],
+			[
+				"commandre",
+				"Cookix/cookix/tools/console/CommandReader.hx"
+			],
+			[
+				"commandr",
+				"Cookix/cookix/tools/console/CommandReader.hx"
+			],
+			[
+				"m",
+				"Cookix/cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"command",
+				"Cookix-Demo/application/Command.hx"
+			],
+			[
+				"folde",
+				"Cookix/cookix/tools/FolderReader.hx"
+			],
+			[
+				"serv",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"servic",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"jsonrespo",
+				"vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/JsonResponse.php"
+			],
+			[
+				"response",
+				"vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Response.php"
+			],
+			[
+				"control",
+				"Cookix/cookix/core/controller/Controller.hx"
+			],
+			[
+				"servicecon",
+				"Cookix/cookix/core/container/ServiceContainer.hx"
+			],
+			[
+				"folder",
+				"Cookix/cookix/tools/FolderReader.hx"
+			],
+			[
+				"service.hx",
+				"Cookix/cookix/core/services/container/Service.hx"
+			],
+			[
+				"kern",
+				"Cookix/cookix/core/Kernel.hx"
+			],
+			[
+				"routingm",
+				"Cookix/cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"routing",
+				"Cookix-Demo/src/cookix/demo/config/routing.json"
+			],
+			[
+				"fold",
+				"Cookix/cookix/tools/FolderReader.hx"
+			],
+			[
+				"configur",
+				"cookix/core/config/ConfigurationMacro.hx"
+			],
+			[
+				"routingma",
+				"cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"runsc",
+				"Cookix/script/RunScript.hx"
+			],
+			[
+				"rea",
+				"Cookix/README.md"
+			],
+			[
+				"servicema",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"configura",
+				"Cookix/cookix/core/config/ConfigurationMacro.hx"
+			],
+			[
+				"re",
+				"Cookix-Demo/README.md"
+			],
+			[
+				"routingp",
+				"Cookix/cookix/core/http/parameters/RoutingParameters.hx"
+			],
+			[
+				"querypa",
+				"Cookix/cookix/core/http/parameters/QueryParameters.hx"
+			],
+			[
+				"abstr",
+				"Cookix/cookix/core/http/parameters/AbstractParametersBag.hx"
+			],
+			[
+				"post",
+				"Cookix/cookix/core/http/parameters/PostParameters.hx"
+			],
+			[
+				"head",
+				"Cookix/cookix/core/http/parameters/HeaderParameters.hx"
+			],
+			[
+				"servicecont",
+				"Cookix/cookix/core/container/ServiceContainer.hx"
+			],
+			[
+				"object",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"servico",
+				"Cookix/cookix/core/container/ServiceContainer.hx"
+			],
+			[
+				"democ",
+				"Cookix-Demo/src/cookix/demo/controllers/DemoController.hx"
+			],
+			[
+				"demos",
+				"Cookix-Demo/src/cookix/demo/services/DemoService.hx"
+			],
+			[
+				"resolv",
+				"Cookix/cookix/core/services/controller/Resolver.hx"
+			],
+			[
+				"service",
+				"Cookix/cookix/core/services/routing/Routing.hx"
+			],
+			[
+				"cont",
+				"Cookix/cookix/core/services/context/Context.hx"
+			],
+			[
+				"conte",
+				"Cookix/cookix/core/services/context/Context.hx"
+			],
+			[
+				"servi",
+				"Cookix/cookix/core/config/services.json"
+			],
+			[
+				"disp",
+				"Cookix/cookix/core/services/event/EventDispatcher.hx"
+			],
+			[
+				"democon",
+				"Cookix-Demo/src/cookix/demo/controllers/DemoController.hx"
+			],
+			[
+				"demose",
+				"Cookix-Demo/src/cookix/demo/services/DemoService.hx"
+			],
+			[
+				"routin",
+				"Cookix/cookix/core/routing/RoutingMacro.hx"
+			],
+			[
+				"",
+				"Cookix-Demo/application/Boot.hx"
+			],
+			[
+				"routet",
+				"Cookix/cookix/core/routing/RouteType.hx"
+			],
+			[
+				"routingpa",
+				"Cookix/cookix/core/http/parameters/RoutingParameters.hx"
+			],
+			[
+				"stringmap",
+				"Cookix/cookix/tools/StringMapWX.hx"
+			],
+			[
+				"astr",
+				"Cookix/cookix/core/http/parameters/AbstractParametersBag.hx"
+			],
+			[
+				"routingpar",
+				"Cookix/cookix/core/http/parameters/RoutingParameters.hx"
+			],
+			[
+				"abstra",
+				"Cookix/cookix/core/http/request/AbstractRequest.hx"
+			],
+			[
+				"reques",
+				"Cookix/cookix/core/http/request/Request.hx"
+			],
+			[
+				"kernel",
+				"Cookix/cookix/core/Kernel.hx"
+			],
+			[
+				"dispa",
+				"Cookix/cookix/core/services/event/EventDispatcher.hx"
+			],
+			[
+				"kerne",
+				"Cookix/cookix/core/Kernel.hx"
+			],
+			[
+				"services.",
+				"Cookix/cookix/core/config/services.json"
+			],
+			[
+				"routing.j",
+				"Cookix/cookix/core/config/routing.json"
+			],
+			[
+				"routety",
+				"Cookix/cookix/core/routing/RouteType.hx"
+			],
+			[
+				"obej",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"boot",
+				"Cookix-Demo/application/Boot.hx"
+			],
+			[
+				"resolve",
+				"Cookix/cookix/core/services/controller/Resolver.hx"
+			],
+			[
+				"bo",
+				"Cookix-Demo/src/cookix/demo/views/js/bootstrap.js"
+			],
+			[
+				"configuration",
+				"Cookix/cookix/core/Configuration.hx"
+			],
+			[
+				"obje",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"objec",
+				"Cookix/cookix/tools/ObjectDynamic.hx"
+			],
+			[
+				"configu",
+				"Cookix/cookix/core/services/config/Configuration.hx"
+			],
+			[
+				"config.",
+				"Cookix-Demo/application/config/config.json"
+			],
+			[
+				"buil",
+				"Cookix-Demo/build.hxml"
+			],
+			[
+				"configurationmac",
+				"Cookix/cookix/core/config/ConfigurationMacro.hx"
+			],
+			[
+				"servicea",
+				"Cookix/cookix/core/container/ServiceMacro.hx"
+			],
+			[
+				"confi",
+				"lib/wx/core/Configuration.hx"
+			],
+			[
+				"tagt",
+				"lib/wx/core/container/TagType.hx"
+			],
+			[
+				"servicec",
+				"lib/wx/core/container/ServiceContainer.hx"
+			],
+			[
+				"servicem",
+				"lib/wx/core/container/ServiceMacro.hx"
+			],
+			[
+				"metadata",
+				"lib/wx/tools/macro/Metadata.hx"
+			],
+			[
+				"class",
+				"lib/wx/tools/macro/ClassMetadata.hx"
+			],
+			[
+				"configuratio",
+				"lib/wx/core/services/config/Configuration.hx"
+			],
+			[
+				"tagty",
+				"lib/wx/core/container/TagType.hx"
+			],
+			[
+				"servicecn",
+				"lib/wx/core/container/ServiceContainer.hx"
+			],
+			[
+				"subs",
+				"lib/wx/core/events/Subscriber.hx"
+			],
+			[
+				"eventdi",
+				"lib/wx/core/services/event/EventDispatcher.hx"
+			],
+			[
+				"bui",
+				"build.hxml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
