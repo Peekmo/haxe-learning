@@ -1,0 +1,4 @@
+-lib flixel
+-lib openfl
+-lib flixel-addons
+-lib nape

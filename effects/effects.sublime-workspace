@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"cop",
+				"copyPixels(...)	Void"
+			],
+			[
 				"al",
 				"alpha	Float"
 			],
@@ -280,18 +284,26 @@
 	"buffers":
 	[
 		{
-			"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/source/PlayState.hx",
+			"file": "source/PlayState.hx",
 			"settings":
 			{
-				"buffer_size": 2894,
+				"buffer_size": 2237,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/completion.hxml",
+			"file": "Project.xml",
 			"settings":
 			{
-				"buffer_size": 102,
+				"buffer_size": 3089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/peekmo/.config/sublime-text-3/Packages/User/Flixel.sublime-build",
+			"settings":
+			{
+				"buffer_size": 95,
 				"line_ending": "Unix"
 			}
 		}
@@ -400,6 +412,9 @@
 	},
 	"file_history":
 	[
+		"/usr/lib/haxe/lib/flixel/3,3,2/flixel/effects/FlxSpriteFilter.hx",
+		"/usr/lib/haxe/std/flash/display/BitmapData.hx",
+		"/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/completion.hxml",
 		"/home/peekmo/Haxe/haxe-learning/effects/build.hxml",
 		"/home/peekmo/Haxe/haxe-learning/effects/assets/data/map.csv",
 		"/home/peekmo/Haxe/haxe-learning/effects/Project.xml",
@@ -524,10 +539,7 @@
 		"/home/peekmo/Haxe/Cookix-Demo/application/config/bundles.json",
 		"/home/peekmo/Haxe/Cookix-Demo/LICENSE",
 		"/home/peekmo/Haxe/Cookix/cookix/tools/StringMapWX.hx",
-		"/home/peekmo/Haxe/Cookix/cookix/tools/ArrayTools.hx",
-		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/Request.hx",
-		"/home/peekmo/Haxe/Cookix/cookix/core/http/request/RequestPhp.hx",
-		"/home/peekmo/Haxe/Cookix/cookix/exceptions/InvalidArgumentException.hx"
+		"/home/peekmo/Haxe/Cookix/cookix/tools/ArrayTools.hx"
 	],
 	"find":
 	{
@@ -620,19 +632,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/source/PlayState.hx",
-					"semi_transient": true,
+					"file": "source/PlayState.hx",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2894,
+						"buffer_size": 2237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								815,
-								815
+								1169,
+								1169
 							]
 						],
 						"settings":
@@ -640,53 +652,53 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
-								"bh_curly_close"
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
 							],
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -694,19 +706,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/peekmo/Haxe/haxe-learning/FlxTilemapExt/completion.hxml",
+					"file": "Project.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 3089,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								608,
+								608
 							]
 						],
 						"settings":
@@ -755,14 +767,86 @@
 								"bh_curly_open",
 								"bh_curly_close"
 							],
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Hxml.tmLanguage"
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/peekmo/.config/sublime-text-3/Packages/User/Flixel.sublime-build",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -801,7 +885,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 108.0
+		"height": 173.0
 	},
 	"output.find_results":
 	{

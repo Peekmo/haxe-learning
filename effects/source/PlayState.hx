@@ -8,7 +8,7 @@ import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
 import flash.filters.GlowFilter;
 import flash.display.BitmapData;
-import flixel.addons.display.FlxGridOverlay;
+import flixel.effects.FlxSpriteFilter;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -18,6 +18,10 @@ class PlayState extends FlxState
 	var map : flixel.tile.FlxTilemap;
 
 	var player : FlxSprite;
+
+	var filter : GlowFilter;
+
+	var sprFilter : flixel.effects.FlxSpriteFilter;
 
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -32,10 +36,15 @@ class PlayState extends FlxState
 
 		this.set_bgColor(0xcccc9999);
 
-		this.player = new FlxSprite(0, 110);
-		this.player.loadGraphic("assets/images/sprite.png", true, 50, 50);
+		// var pplayer = new FlxSprite(55, 110, "assets/images/sprite.png");
+		this.player = new FlxSprite(55, 110, "assets/images/sprite.png");
 		this.add(player);
+		filter = new GlowFilter(0xFF0000, 1, 50, 50, 1.5, 1);
+		
+		sprFilter = new FlxSpriteFilter(this.player, 50, 50);
+		sprFilter.addFilter(filter);
 
+		// this.player.loadGraphic(, true, 50, 50);
 		this.player.animation.add("defaut", [0]);
 		this.player.animation.add("action", [1]);
 
@@ -44,11 +53,9 @@ class PlayState extends FlxState
 
 		this.player.alpha = 0.5;
 
-		// var filter = new flixel.effects.FlxSpriteFilter(this.player, 40, 40);
-		// filter.addFilter(new GlowFilter(0x7de18b, 1, 40, 40));
 		
-		var grid = FlxGridOverlay.create(10, 10, Std.int(this.map.width), Std.int(this.map.height), false, 0x09999999, 0x10999999);
-		this.add(grid);
+		// var grid = FlxGridOverlay.create(10, 10, Std.int(this.map.width), Std.int(this.map.height), false, 0x09999999, 0x10999999);
+		// this.add(grid);
 
 		super.create();
 	}
